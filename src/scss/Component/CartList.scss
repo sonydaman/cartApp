@@ -1,0 +1,67 @@
+@import "../variables.scss";
+.CartList{
+    &.segment{
+        border: 1px solid $dark-gray;
+    }
+    .item{
+        display:flex;
+        .content{
+            width: 100%;
+            padding: 12px;
+            .header{
+                margin: 0;
+            }
+        }
+    }
+    .meta{
+        display: flex;
+        &-label{
+            flex-basis: 50%;
+            display: flex;
+            align-items: flex-end;
+        }
+        &-actions{
+            flex-basis: 40%;
+            .input{
+                margin: 0 5px;
+                width: 15%;
+                height: 100%;
+                text-align: center;
+                border: 2px solid $gray;
+                background-color: $white;
+                font-size: 1.3em;
+                font-weight: bold;
+            }
+        }
+        &-remove{
+            &-link{
+                box-shadow: none;
+                font-size: 1.2em;
+                font-weight: bold;
+                color:$black;
+                cursor: pointer;
+                &:hover{
+                    color:$dark-gray;
+                }
+            }
+        }
+        .price{
+            font-weight:bold;
+            margin:0 5px;
+            &-icon{
+                margin:0;
+                width:auto;
+                font-size: 0.9em;
+            }
+        }
+        .original-price{
+            margin:0 5px;
+            text-decoration: line-through;
+            font-weight: bold;
+        }
+        .discount-price{
+            color:$green;
+            font-weight: bold;
+        }
+    }
+}

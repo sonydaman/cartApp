@@ -1,0 +1,48 @@
+@import "../variables.scss";
+.price-component{
+    padding: 0px;
+    border: 1px solid $black;
+    border-radius: 0px;
+    background-color: $white;
+    .price{
+        &-heading,&-total{
+            font-size: 18px;
+            padding: 15px;
+            font-weight:bold;
+        }
+        &-heading{
+            border-bottom: 1px solid $gray;
+            color:$dark-gray;
+        }
+        &-details{
+            padding: 15px;
+            font-size: 15px;
+            &-left{
+                margin-right: 15px;
+            }
+            &-right{
+                float: right;
+                .icon{
+                    width:auto;
+                    margin: 0px;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        &-total{
+            border-top:1px solid $black;
+            color:$black;
+            &-left{
+                margin-right: 15px;
+            }
+            &-right{
+                float: right;
+                .icon{
+                    width:auto;
+                    margin: 0px;
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+}
